@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+  <style>
+    .navbar-inverse {
+    background-color: #481B5A;
+    border-color: #19081f;
+    border-bottom: solid 4px #19081f;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+    color: #E0E0E0;
+    }
+    .navbar-inverse .navbar-brand{
+    color: #E0E0E0;
+    }
+    .navbar-wrapper {
+    margin-top: 0px;
+    }
+    .carousel-inner > .item > img {
+      height: auto;
+      background-color: #FFFFFF;
+  }
+  .carousel-inner {
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+    }
+    .carousel {
+    height: 800px;
+    margin-bottom: 60px;
+}
+@media(max-width:899px)
+{
+  .carousel-inner > .item > img {
+    height: auto;
+    background-color: #FFFFFF;
+  }
+  .carousel-inner {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    }
+    .carousel {
+    height: 400px;
+    margin-bottom: 60px;
+}
+.carousel-caption p {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 100px;
+}
+}
+@media(max-width:719px){
+  .carousel-inner {
+    width:auto;
+    max-width: 719px;
+    height: 400px;
+    }
+    .carousel {
+    width:auto;
+    max-width: 719px;
+    height: 400px;
+    margin-bottom: 60px;
+    }
+}
+  
+.carousel-control {
+    color: #481B5A;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+  </style>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Kami's Nightmare</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://www.dapper-apps.com/contact/">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>-->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/Title Final.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Kami's Nightmare</h1>
+              <p>Currently In Development. Coming Soon To The Windows Phone Store The iOS App Store and the Google Play Store.</p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/Nightmare Landscape.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Unique Artwork, Style, And Lovable Characters.</h1>
+              <p>The Game Features All Hand Drawn Artwork By The Dapper Apps Team. Lovable Querky Characters You Can't Help But Fall In Love With, And Soon Awesome Gameplay That Will Have You Hooked.</p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>-->
+            </div>
+          </div>
+        </div>
+          
+        <div class="item">
+          <img src="images/ThirdScreen1.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>The Theme Is Scary But Its Not Exactly Terrifying.</h1>
+              <p>The Game Isn't Meant To Be Scary, It Just Has Some Darker Aspects So The Fact That She Is In A Nightmare Is Reflected Easily.</p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/Fog.png" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Cool Effects</h1>
+              <p>Every Detail Is Given Attention.</p>
+              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    
+
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/Fran.png" alt="Generic placeholder image">
+          <h2>Francisco Aguilera</h2>
+          <p>Lead Programmer and Artist for Dapper Apps</p>
+          <p><a class="btn btn-default" href="https://www.facebook.com/falven?fref=tl_fr_box" role="button">Facebook &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/Tony.png" alt="Generic placeholder image">
+          <h2>Antonio Assenza</h2>
+          <p>Buisness Manager for Dapper Apps</p>
+          <p><a class="btn btn-default" href="https://www.facebook.com/aassenza?fref=tl_fr_box" role="button">Facebook &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/Rafa.png" alt="Generic placeholder image">
+          <h2>Rafael Aguilera</h2>
+          <p>Lead Animator and Artist for Dapper Apps</p>
+          <p><a class="btn btn-default" href="https://www.facebook.com/ralven2000" role="button">Facebook &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+      <hr class="featurette-divider">
+      <h1 style="font-size: 4em; text-align: center">Characters</h1>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Kami. <span class="text-muted">Our Hero and Protagonist</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Kami.png" alt="Generic placeholder image"><!-------------------------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Teddy.png" alt="Generic placeholder image"><!---------------------------------------------------------------here-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare TeddyBear. <span class="text-muted">Big Sharp Claws And Teeth Makes Him Intimidating</span></h2>
+          <p class="lead">Here Goes Character Description.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Bunny. <span class="text-muted">Isnt That A Creepy Smile!</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Bunny.png" alt="Generic placeholder image"><!--------------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Sheep.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Sheep. <span class="text-muted">This Isn't The Typical Sheep You Count. </span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Muffin. <span class="text-muted">Something About Him Says Dont Eat Me!</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Cupcake.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Sour Candy.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Sour Candy. <span class="text-muted">First They're Sour, Then They're Sweet? Maybe</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Chick. <span class="text-muted">Dont Let His Innocent Looks Fool You.</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Chick.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Donut.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Donut. <span class="text-muted">Usually Tasty, This Time Probably Not.</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+        
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Duckie. <span class="text-muted">Now Here's Someone Who Will Ruffle Your Feathers.</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Duckie.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Candy Cane.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Candy Cane. <span class="text-muted">Cavities Will Be The Least Of Your Worries Once He's Done With You.</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Animal Cracker<span class="text-muted"></span> He Might Not Look Like Much But He Acts Like An Animal</h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Animal Cracker.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Monkey.png" alt="Generic placeholder image"><!---------------------------------------------------------------------------------here-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Monkey. <span class="text-muted">This Monkey Is Up To No Good.</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Nightmare Candy Corn. <span class="text-muted">Halloween's Favorite Candy Has Some Pretty Sharp Teeth.</span></h2>
+          <p class="lead">Here Goes Character Description. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/NightmareCharacters/Nightmare Candy Corn.png" alt="Generic placeholder image"><!----------------------------------------------------------here-->
+        </div>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Dapper Apps, All rights reserved. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a><br>Rafael Aguilera</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
+</html>
